@@ -1,0 +1,39 @@
+#服务端配置
+server:
+    #服务器ip
+    host: 0.0.0.0
+
+    #监听端口
+    port: 9229
+
+    #后台运行
+    daemonize: false
+
+#日志配置
+log:
+    #日志目录
+    path: ./log/bifrost.log
+
+    #日志保存几天
+    keep: 1
+
+    #日志保存个数
+    backup: 7
+
+    #日志级别
+    level: debug
+
+    #日志信息控制台输出、落地
+    console: true
+
+#应用配置
+app:
+
+    #数据在内存中保存天数
+    keepday: 1
+
+    #多久生成一次排行cache
+    cachecycle: 2
+
+    #binlog备份目录
+    binlog: ./binlog/
